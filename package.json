@@ -1,0 +1,77 @@
+{
+  "name": "fe-utils",
+  "version": "0.1.0",
+  "description": "Curated frontend algorithm utilities in TypeScript, ported from 算法101.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./string": {
+      "types": "./dist/string/index.d.ts",
+      "import": "./dist/string/index.js",
+      "require": "./dist/string/index.cjs"
+    },
+    "./array": {
+      "types": "./dist/array/index.d.ts",
+      "import": "./dist/array/index.js",
+      "require": "./dist/array/index.cjs"
+    },
+    "./number": {
+      "types": "./dist/number/index.d.ts",
+      "import": "./dist/number/index.js",
+      "require": "./dist/number/index.cjs"
+    },
+    "./math": {
+      "types": "./dist/math/index.d.ts",
+      "import": "./dist/math/index.js",
+      "require": "./dist/math/index.cjs"
+    },
+    "./dp": {
+      "types": "./dist/dp/index.d.ts",
+      "import": "./dist/dp/index.js",
+      "require": "./dist/dp/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+  "keywords": ["algorithms", "frontend", "typescript", "data-structures", "utility", "101"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "gen:docs": "typedoc",
+    "prepublishOnly": "pnpm lint && pnpm test && pnpm build",
+    "verify": "pnpm typecheck && pnpm lint && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^20.14.0",
+    "@vitest/coverage-v8": "^2.1.5",
+    "tsup": "^8.3.5",
+    "typedoc": "^0.26.11",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  },
+  "packageManager": "pnpm@11.23.0"
+}

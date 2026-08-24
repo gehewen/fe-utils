@@ -1,0 +1,22 @@
+node_modules
+dist
+coverage
+docs
+*.log
+.DS_Store
+Thumbs.db
+.idea
+*.tsbuildinfo
+.env
+.env.local
+.cache
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Reference materials (not part of the fe-utils project itself)
+算法101.pdf
+算法101.md
+
+# Claude Code local settings (machine-specific, per project)
+.claude/

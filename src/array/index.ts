@@ -1,0 +1,12 @@
+// algo.array — array manipulation utilities
+export { rotate } from './rotate';
+export { twoSum } from './twoSum';
+export { removeDuplicates } from './removeDuplicates';
+export { moveZeroes } from './moveZeroes';
+export { intersection } from './intersection';
+export { containsDuplicate } from './containsDuplicate';
+export { groupAnagrams } from './groupAnagrams';
+export { mergeSortedArrays } from './mergeSortedArrays';
+export { mergeIntervals } from './mergeIntervals';
+export { topKFrequent } from './topKFrequent';
+export { majorityElement } from './majorityElement';
