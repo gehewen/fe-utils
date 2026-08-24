@@ -61,6 +61,7 @@
     "format": "biome format --write .",
     "format:check": "biome format .",
     "gen:docs": "typedoc",
+    "prepare": "pnpm build",
     "prepublishOnly": "pnpm lint && pnpm test && pnpm build",
     "verify": "pnpm typecheck && pnpm lint && pnpm test && pnpm build"
   },
