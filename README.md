@@ -2,6 +2,8 @@
 
 > Curated frontend algorithm utilities in TypeScript, ported from the Chinese algorithm study guide "算法101" (101 problems).
 
+**Other languages:** [简体中文](README.zh-CN.md)
+
 A zero-dependency, dual ESM/CJS algorithm library for frontend developers. 27 functions across 5 namespaces covering string manipulation, array operations, number parsing, math, and dynamic programming.
 
 > **📦 Distribution status:** The library is available via **GitHub only**. It is **not yet published to the public npm registry** under the name `fe-utils` — `pnpm add fe-utils` and `npm install fe-utils` will not work today. The npm release is tracked in the [Roadmap](#roadmap) section. Until then, follow the [Install from GitHub](#install-from-github-current) instructions below.
